@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Last Week Tonight with John Oliver S6E26 Weather</title>
+            <respStmt>
+               <name>Helene Gödl</name>
+               <resp>Encoding</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <name xml:id="HG" role="editor">Helene Gödl</name>
+            </publisher>
+            <pubPlace>ZIM: Zentrum für Informationsmodellierung</pubPlace>
+            <date when="2022-01-19">19.01.2022</date>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording type="video" dur="P16M">
+                  <equipment>
+                     <p>Downloaded from YouTube</p>
+                  </equipment>
+                  <broadcast>
+                     <bibl>
+                        <title>Weather: Last Week Tonight with John Oliver (HBO)</title>
+                        <respStmt>
+                           <name>John Oliver</name>
+                           <resp>Host</resp>
+                        </respStmt>
+                        <respStmt>
+                           <name>Paul Pennolino</name>
+                           <resp>Director</resp>
+                        </respStmt>
+                        <series><title>Last Week Tonight</title></series>
+                        <note>First broadcast on <date when="2019-10-13">October 13,
+                           2019</date></note>
+                     </bibl>
+                  </broadcast>
+                  <p><ptr target="https://www.youtube.com/watch?v=qMGn9T37eR8"/></p>
+               </recording>
+            </recordingStmt>
+            <scriptStmt>
+               <bibl>
+                  <author>Dan Gurewitch</author>
+                  <author>Jeff Maurer </author>
+                  <author>Daniel O'Brien</author>
+                  <author>John Oliver</author>
+                  <author>Owen Parsons</author>
+                  <author>Charlie Redd</author>
+                  <author>Ben Silva</author>
+                  <author>Jill Twiss</author>
+                  <author>Seena Vali</author>
+                  <author>Juli Weiner</author>
+                  <title>National Weather Service</title>
+                  <publisher>HBO</publisher>
+                  <country>United States</country>
+               </bibl>
+            </scriptStmt>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson>
+         <!-- The list of persons contains the persons in the video in the order of their appearance -->
+         <person xml:id="JO" role="Host">
+            <!-- xml IDs are allocated to every person making utterances throughout the video to clearly identify who is speaking at a given time in the video -->
+            <persName>
+               <addName>John Oliver</addName>
+               <forename>John</forename>
+               <surname>Oliver</surname>
+            </persName>
+         </person>
+         <person xml:id="UP01" role="Weather Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <!-- Many of the persons appearing in the cutaways inserted throughout the show are not identified by name. I therefore decided to label them with the xml ID "UP" ("Unknown Person") and a number allocated according to the order of their appearance -->
+         <person xml:id="UP02" role="Weather Studio Staff">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP03" role="National Weather Service Meteorologist">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP04" role="AccuWeather Ad Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP05" role="The Weather Channel Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP06" role="The Weather Channel Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="JM" role="Founder and CEO of AccuWeather">
+            <persName>
+               <addName>Joel Myers</addName>
+               <forename>Joel</forename>
+               <surname>Myers</surname>
+            </persName>
+         </person>
+         <person xml:id="EV" role="Musician">
+            <persName>
+               <addName>Eddie Vedder</addName>
+               <forename>Eddie</forename>
+               <surname>Vedder</surname>
+            </persName>
+         </person>
+         <person xml:id="UP07" role="The Weather Channel Spokesman">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP08" role="The Weather Channel Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP09" role="ABC Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="BM" role="Executive Vice President of AccuWeather">
+            <persName>
+               <addName>Barry Lee Myers</addName>
+               <forename>Barry</forename>
+               <forename>Lee</forename>
+               <surname>Myers</surname>
+            </persName>
+         </person>
+         <person xml:id="UP10" role="CNBC Interviewer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP11" role="Bloomberg Businessweek Host">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+         <person xml:id="UP12" role="Action News 4 Announcer">
+            <persName>
+               <addName>Unknown</addName>
+            </persName>
+         </person>
+      </listPerson>
+   </standOff>
+   <text>
+      <body>
+         <div type="intro">
+            <incident dur-iso="P3S">
+               <desc>[Music]</desc>
+            </incident>
+         </div>
+         <div type="section">
+            <!-- I chose the attribute "section" to label the parts of the show where the host sits at his desk and performs the main text portions -->
+            <u who="#JO"> I'd like to talk about the weather and I mean all of it the hots the wets
+               the whooshes the brrrs and of course <shift feature="tempo" new="a"/>the flashy
+               flashy boom booms.<incident>
+                  <desc>[audience laughter]</desc>
+               </incident>
+               <!-- I decided to place the audience reaction incidents such as "audience laughter" directly after each part of the utterances that caused the audience reactions. 
+                  This may be useful if the digitalized transcript is used to analyze the success of individual jokes  -->
+               <shift feature="tempo" new="normal"/>Predicting the weather accurately is a
+               multi-billion dollar industry that can affect businesses and literally save lives so
+               there is a lot of pressure on weather forecasters which might explain why they
+               sometimes snap</u>
+         </div>
+         <div type="cutaway" xml:id="CA01">
+            <!-- I chose to label full clips inserted into the show from other media as "cutaways". This is a technical term used in television and film production 
+               describing a piece of video or film cut between the main parts of a scene. I also decided to give each cutaway an xml ID -->
+            <u who="#UP01" trans="smooth" rend="annoyed">I want you guys to say wow that's great
+               news it's gonna be 60 on Friday </u>
+            <u who="#UP02" trans="latching">Well I thought you said it was going to snow again</u>
+            <u who="#UP01" trans="overlap"><shift feature="pitch" new="high"/>Well I mean what do
+               you want me to do lie to you? I'll put 70 every day next time <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><vocal>
+                  <desc>[sighs]</desc>
+               </vocal>
+               <shift feature="pitch" new="normal"/> there's some wind here's some temperature 20s <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>feels like 19 or feels like 70 I don't know <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>47 partly cloudy Southwest breeze 10 to 15 <shift feature="voice"
+                  new="sarcastic"/>here's a 60 I don't know if that's good enough for you guys <incident>
+                  <desc>[audience laugher]</desc>
+               </incident>get excited maybe I'll disappoint you with the 7-day here a few
+               minutes</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth"><incident>
+                  <desc>[audience applause]</desc>
+               </incident> I honestly honestly wish all local news was delivered like that. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="pitch" new="low"/>A gas station got robbed that's not my
+               fucking fault! <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> In traffic there should be no delays in getting you home to your sad
+               lives and your dumpy ugly kids <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> and in sports any athlete on any team could fuck your spouse if they
+               wanted to that's the news suck <kinesic>
+                  <desc>[lifts left middle finger]</desc>
+               </kinesic> on this one sit <kinesic>
+                  <desc>[lifts right middle finger]</desc>
+               </kinesic> on that one. <incident>
+                  <desc>[audience laughter]</desc>
+                  <desc>[audience applause]</desc>
+               </incident><shift feature="pitch" new="normal"/> Look maybe maybe you don't get your
+               weather from local news maybe use an app like the one that came with your phone or
+               Darksky or Weather Underground or from places like the Weather Channel or
+               AccuWeather. If you're a New Yorker you might even get your weather from New York 1's
+               Twitter account and if you don't you absolutely should because their actual forecast
+               for the first of this month was <q>"October got off to a warm start today enjoy the
+                  month it's the last good one for NYC until May <shift feature="tempo" new="l"/>
+                  <shift feature="loud" new="f"/>the rest are trash"</q>
+               <incident>
+                  <desc>[audience laughter]</desc>
+                  <desc>[audience applause]</desc>
+               </incident> which is excellent! <incident>
+                  <desc>[continued audience laughter]</desc>
+               </incident><shift feature="tempo" new="normal"/>
+               <shift feature="loud" new="normal"/>But look,wherever you get your weather from if
+               you live in the u.s. your forecast would not exist without the National Weather
+               Service. It's a subset of its parent agency <choice>
+                  <abbr>NOAA</abbr>
+                  <ex>National Oceanic and Atmospheric Administration</ex>
+               </choice> and it's an absolutely incredible government service generating essential
+               information but unfortunately it may be under serious threat. So tonight much like
+               two colleagues in an elevator let's talk about the weather <incident>
+                  <desc>[audience laughther]</desc>
+               </incident> and and let's start with the fact the National Weather Service harvests a
+               huge amount of data every day and all the other private weather services you can
+               possibly think of are dependent on that data to make their own predictions. Here's
+               one National Weather Service meteorologists pointing exactly that out</u>
+         </div>
+         <div type="cutaway" xml:id="CA02">
+            <u who="#UP03" trans="smooth"> All the forecast warnings and data that's available from
+               the National Weather Service is there free of charge to anyone even though you don't
+               know our names or see our faces most of the time those products and services that you
+               see almost every day likely originated from the National Weather Service office </u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth">Yeah and he's absolutely right. Think of it like this:
+               National Weather Service data is to a weather forecast what fresh Wolverine meat is
+               to Hormel chili <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="rhythm" new="rh"/>you can't make one without the other.
+               it's the dominant ingredient there. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>
+               <shift feature="rhythm" new="normal"/>The National Weather Service also works in
+               tandem with organizations all over the world through the World Meteorological
+               Organization where countries share essential weather data on a free and unrestricted
+               basis. This actually works out very well for the US we receive three times more data
+               back from our partners than we give them and we've really benefited from that in the
+               past. For instance in 2012 the US model initially had hurricane Sandy heading out to
+               the ocean while the European model showed it making a sharp left turn and hitting the
+               east coast which <pause/> it did, of course it did, and because we had that early
+               warning countless lives were saved. So virtually the entire world participates in a
+               weather observation system that most people have never heard of and <pause/>that
+               private companies benefit greatly from. Which is not to say the companies don't add
+               value here because they definitely do. Among other things when a local news station
+               subscribes to say a AccuWeather it gets their state-of-the-art graphics packages.
+               That's something that's been a big part of their brand since at least the 80s</u>
+         </div>
+         <div type="cutaway" xml:id="CA03">
+            <u who="#UP04" trans="smooth">Whatever you need AccuWeather has it <incident>
+                  <desc>[80s style music]</desc>
+               </incident>
+               <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> Every day you can select from thousands of award-winning graphics
+               satellite and radar images graphics that are at the cutting edge of design and
+               accuracy. You'll know about the worst one <figure type="video_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:14 - an 80s video game style graphic of Santa Claus' reindeer
+                     sliding off an icy roof]</desc>
+                  <!-- this is the format I landed on for encoding relevant graphics and video elements. 
+                     There are many more graphics elements in the show, but I decided to only include the most relevant ones 
+                     for the comedy bits. This is also tied to the decision to place the audience reactions 
+                     directly behind the trigger for the reactions -->
+               </figure>
+               <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> like this nasty Christmas Eve in Bradford Pennsylvania <figure
+                  type="video_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:19 - an 80s video game style graphic of two trees wearing
+                     christmas trees as hats]</desc>
+               </figure>or this blizzard in Lonetree Wyoming. Trivia questions can help hold your
+               audience with tantalizing facts. When the weather is in the news <figure
+                  type="video_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:27 - an 80s style graphic of the trajectory of the radiation
+                     cloud from the Chernobyl nuclear disaster over Europe]</desc>
+               </figure>you can be on top of it with special graphics like this one of Chernobyl</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth">
+               <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> Whoa! Fun Chernobyl graphic AccuWeather! that looks like a screenshot
+               from the world's saddest Nintendo game <figure type="video_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:38 - graphic of a Nintendo cartridge with a game-style 8Bit
+                     graphic of a reactor exploding on it]</desc>
+               </figure> where the levels you progress through are stages one two three and four
+               cancer. <incident>
+                  <desc>[audience exclaims]</desc>
+               </incident> and to this day the private sector is on the cutting edge of dressing up
+               weather data one of AccuWeathers main competitors The Weather Channel now regularly
+               produces spectacular and pointless graphics to dramatize severe weather. </u>
+         </div>
+         <div type="cutaway" xml:id="CA04">
+            <u who="#UP05" trans="smooth"><figure type="3d_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:56 - an absurdly detailed 3D video graphic of a truck breaking
+                     through ice is superimposed in front of the presenter in the weather channel
+                     studio]</desc>
+               </figure>...and than it might break through the ice <incident>
+                  <desc>[jump-cut]</desc>
+               </incident><!-- a jump cut is a filmmaking technique where the video is cut with an almost identical shot with only some elements changing from the shot before. These cuts usually seem very abrupt and noticable -->
+               <figure type="3d_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 4:59 - an absurdly detailed 3D video graphic of a crash-test
+                     dummy on a snowmobile breaking through ice is superimposed in front of the
+                     presenter in the weather channel studio]</desc>
+               </figure>...then we start to run into trouble <incident>
+                  <desc>[jump-cut]</desc>
+               </incident><figure type="3d_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 5:01 - an absurdly detailed 3D video graphic of a crash test
+                     dummy breaking through ice is superimposed in front of the presenter in the
+                     weather channel studio]</desc>
+               </figure>...you need that to support the weight of a man</u>
+            <incident>
+               <desc>[cut]</desc>
+            </incident>
+            <u who="#UP06" trans="latching">...and there can be extensive <figure type="3d_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 5:03 - an absurdly detailed 3D video graphic of a life sized
+                     power pole falling down, a log crashing into a door and a car falling from the
+                     sky is superimposed in front of the presenter in the weather channel
+                     studio]</desc>
+               </figure> power outings your way <vocal>
+                  <desc>[exclaims]</desc>
+               </vocal></u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth"> Holy shit! <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>let's all just be thankful that those graphics that advanced were not
+               around during Chernobyl. But <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> the companies clearly don't just provide graphics. Some have their own
+               data collection systems and can use them to augment the weather service data and
+               narrowly tailor forecasts for specific clients. For example they could tell a
+               trucking company what roads will be safest to drive on ahead of winter storms and
+               just listen to Joel Myers founder and <choice>
+                  <abbr>CEO</abbr>
+                  <ex>Chief Executive Officer</ex>
+               </choice> of AccuWeather as he provides another particularly vivid example.</u>
+         </div>
+         <div type="cutaway" xml:id="CA05">
+            <u who="#JM" trans="smooth">Eddie Vedder was doing a concert in Chicago. Live Nation
+               uses our service we gave them a warning. He said we just heard from AccuWeather we
+               need to clear the field, they did. 20 minutes later with everybody out of harm's way
+               a severe lightning storm hit. It struck the stage actually right where he had been
+               standing. </u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth">Wow! he's claiming AccuWeather saved Eddie Vedder's life. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> I guess that's what Eddie was talking about when he famously said and I
+               quote: <q who="#EV" rend="singing">yeah I'm still alive</q>
+               <incident>
+                  <desc>[audience applause]</desc>
+                  <desc>[audience cheering]</desc>
+               </incident> But Myers, Myers actually makes a pretty good case there for the value of
+               private weather companies. Making sure Eddie Vedder doesn't get struck by lightning
+               is simply not something the National Weather Service has the bandwidth to do. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> So the relationship between the public and the private sector is mutually
+               beneficial. In fact sometimes the weather service even buys data from private
+               companies. But there can be tensions because the private sector is by its nature
+               inclined to try and grab attention like when AccuWeather rolled out its
+               groundbreaking 45 day forecast despite the fact most experts agree any forecasts
+               beyond seven to ten days is unreliable and one even called it a joke. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> And and it gets worse. For instance it is the National Weather Service
+               that names tropical storms and they named them to signal that they are important. If
+               a storm gets a name like Sandy or Irene then you know you've got to pay attention.
+               Now they <emph>don't</emph> name winter storms because winter storms ebb and flow
+               much more so naming them could inflate their importance or eventually cheapen naming
+               storms altogether which is why it bugged the shit out of The Weather Service when The
+               Weather Channel suddenly started doing <emph>this</emph>.</u>
+         </div>
+         <div type="cutaway" xml:id="CA06">
+            <u who="#UP07" trans="smooth">this season The Weather Channel is naming major winter
+               storms.</u>
+            <u who="#UP08" trans="smooth">The list includes names like Athena Draco and Magnus</u>
+         </div>
+         <div type="section">
+            <incident>
+               <desc>[audience laughter]</desc>
+            </incident>
+            <u who="#JO" trans="smooth">Right. And yes look those names fucking rule obviously <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> I'm not disputing that but the point is naming them was a bad idea.
+               Especially if - as they did - you call one Janus without, say considering what would
+               happen if a forecaster stood in front of one of those letters <figure type="video"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 7:57 - a weather presenter stands in front of a screen showing
+                     the sentence "Winter Storm Janus" with the presenter's shoulder covering the
+                     letter "J"]</desc>
+               </figure>
+               <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> because you've got a problem on your hands don't you? <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="loud" new="f"/>'hey hey honey the news is saying anus is
+               getting bigger and is going to be dumping all over us for the next three days.'<incident>
+                  <desc>[continued audience laughter]</desc>
+                  <desc>[audience applause]</desc>
+               </incident><shift feature="loud" new="normal"/> But a... but a bigger source of
+               friction has been the private-sector sense that they might be better off if the
+               National Weather Service did slightly less. One notable skirmish came 15 years ago
+               after the National Weather Service made its website more user-friendly and Joel
+               Meyers brother Barry Myers who was then the company's <choice>
+                  <abbr>EVP</abbr>
+                  <ex>Executive Vice President</ex>
+               </choice> expressed his serious frustration</u>
+         </div>
+         <div type="cutaway" xml:id="CA07">
+            <u who="#UP09" trans="smooth">The National Weather Service recently decided to more
+               aggressively share its data directly with taxpayers but not everyone is in favor of
+               it's more accessible website</u>
+            <u who="#BM" trans="latching">We work very hard every day competing with ah other
+               companies and we also have to compete with the government</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth">Hold on, <shift feature="pitch" new="high"/>do you though?
+               do you have to compete? <shift feature="pitch" new="normal"/>or is the government
+               what makes your industry possible in the first place? because without their data
+               every Accuweather Forecast would just be <shift feature="pitch" new="low"/>"fuck if I know!"<incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="pitch" new="normal"/> In fact that same year AccuWeather
+               supported a bill in Congress that could have prevented the Weather Service from doing
+               anything a private company does like providing daily forecasts or putting content on
+               its website. Now the bill failed which is good because what you do not want is a
+               paywall system of weather where only paying customers can find out if they're about
+               to drive into a tornado. And I'm not even making up that worst case scenario it's
+               basically AccuWeather's sales pitch. During that same interview where Joel Myers
+               claimed that he'd saved Eddie Vedder's life he shared an anecdote about a client, a
+               railroad company that pays AccuWeather to give it reports about anything affecting
+               its trains. Now this is subtle but <shift feature="pitch" new="high"/>see if you can
+               pick up on a problem here</u>
+         </div>
+         <div type="cutaway" xml:id="CA08">
+            <u who="#JM" trans="smooth">Union Pacific we told them that a tornado was heading to a
+               spot, two trains stopped two miles apart they watched the tornado go between</u>
+            <u who="#UP10" trans="overlap">wooow</u>
+            <u who="#JM" trans="overlap"> between them. Unfortunately it went into a town that
+               didn't have our service and a couple dozen people were killed but <incident>
+                  <desc>[studio audience exclaims]</desc>
+               </incident> the railroads did not lose anything</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="latching"><shift feature="loud" new="f"/>What <incident>
+                  <desc>[audience continued exclaimations]</desc>
+                  <desc>[audience laughter]</desc>
+               </incident> the fuck did you just say? that is a weird focus on the safety of a
+               railroad over human life. That's a man who read Anna Karenina and came away thinking
+               it's a story about a woman who mildly inconvenienced a train. Now <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>
+               <shift feature="pitch" new="normal"/><shift feature="loud" new="normal"/>now while
+               people did die in that tornado it was actually an example of the warning system
+               working well. Because while yes, AccuWeather did inform their client Union Pacific
+               the National Weather Service also warned the town just a few minutes later giving
+               residents their time to seek shelter but what Myers is doing there is marketing
+               AccuWeather as indispensable for public safety which thanks to the current strength
+               of the National Weather Service it isn't. Freely shared information has tremendous
+               potentially life-saving value although at times his brother Barry has argued
+               otherwise. Remember how our partners in Europe were able to help us prepare for
+               hurricane Sandy just listen to how he described that</u>
+         </div>
+         <div type="cutaway" xml:id="CA09">
+            <u who="#BM" trans="smooth">Of special focus during superstorm Sandy was the <choice>
+                  <abbr>ECMWF</abbr>
+                  <ex>European Centre for Medium-Range Weather Forecasts</ex>
+               </choice> so-called European model which did a better job at some points in the storm
+               track than US models did. <incident>
+                  <desc>[jump-cut]</desc>
+               </incident> Relying on other countries for better weather models places America in a
+               weak and subservient position</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth"><shift feature="pitch" new="high"/>Wait<incident>
+                  <desc>[audience laughter]</desc>
+               </incident>cooperation makes America weak and subservient? <shift feature="pitch"
+                  new="normal"/>that is a viewpoint that would make for a tantalizing bit of
+               AccuWeather trivia: <shift feature="loud" new="f"/>"Who lost World War 2? Britain for
+               accepting help" <incident>
+                  <desc>[audience laughter]</desc>
+               </incident>
+               <shift feature="loud" new="normal"/>So it is just crucial that whoever runs the
+               National Weather Service is someone who A: sees the obvious benefit of international
+               cooperation and B: can stand up to the potential pressures of the private sector and
+               particularly Joel and Barry Myers and at this point <pause/> you can probably guess
+               what's coming</u>
+         </div>
+         <div type="cutaway" xml:id="CA10">
+            <u who="#UP11" trans="smooth">President Trump nominating the AccuWeather <choice>
+                  <abbr>CEO</abbr>
+                  <ex>Chief Executive Officer</ex>
+               </choice> he's Barry Myers and President Trump wants him to be the Undersecretary of
+               the National Weather Service is an <kinesic>
+                  <desc>[gestures index fingers at co-host]</desc>
+               </kinesic>
+               <shift feature="pitch" new="asc"/>interesting nomination</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth"><kinesic>
+                  <desc>[mimics index finger gesture of host in cutaway]</desc>
+               </kinesic><shift feature="pitch" new="asc"/>yes it is! <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="pitch" new="normal"/>In fact you can even say it's <kinesic>
+                  <desc>[continues gesture]</desc>
+               </kinesic>
+               <shift feature="pitch" new="asc"/>incredibly predictable <incident>
+                  <desc>[audience laughter continued]</desc>
+               </incident> because everything Trump does is designed to destroy government from the
+               inside! <kinesic>
+                  <desc>[ends gesture by blowing on index fingers as you would after mimicking gun
+                     shots]</desc>
+               </kinesic>
+               <incident>
+                  <desc>[audience laughter]</desc>
+               </incident><shift feature="pitch" new="normal"/>the National Weather Service is a
+               terrible government agency to put in the hands of a businessman. And while Myers has
+               stepped down from AccuWeather and divested his stake in the company it is still very
+               much a family business with his son-in-law and wife being employed there in recent
+               years and his two brothers still serving as <choice>
+                  <abbr>CEO</abbr>
+                  <ex>Chief Executive Officer</ex>
+               </choice> and <choice>
+                  <abbr>COO</abbr>
+                  <ex>Chief Operating Officer</ex>
+               </choice> of the company and yet during his confirmation hearing Myers insisted
+                  <shift feature="loud" new="dimin"/>that wouldn't be a problem</u>
+         </div>
+         <div type="cutaway" xml:id="CA11">
+            <u who="#BM" trans="smooth">I've made it clear to my brothers in fact jokingly I I
+               explained to them that we may see each other at Thanksgiving dinner and we can talk
+               about football and family things but we cannot talk about <choice>
+                  <abbr>NOAA</abbr>
+                  <ex>National Oceanic and Atmospheric Administration</ex>
+               </choice></u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth"><shift feature="loud" new="normal"/>really? <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> really? you won't talk about the thing that could vastly enrich the
+               family business at Thanksgiving? Well conveniently Thanksgiving is now exactly 45
+               days away so allow me to make a 45 day forecast:<shift feature="loud" new="ff"/>
+               Bullshit! <incident>
+                  <desc>[audience laughter]</desc>
+                  <desc>[audience applause]</desc>
+                  <desc>[audience cheers]</desc>
+               </incident><shift feature="loud" new="normal"/> And it is worth asking here, why
+               aside from the obvious would Barry Myers want this job? If you're thinking well maybe
+               he's just a weather nerd who's always wanted to be at the source of all the
+               information he's not that. A few years ago he told the Wall Street Journal <q
+                  who="#BM">"I'm not a meteorologist"</q> and that as a young man <q who="#BM">"I
+                  knew meteorology was not what I wanted to do"</q> It's also not like he's hoping
+               to parlay this job into a future lobbying gig on K Street. He's a 76 year old
+               multi-millionaire so he has no passion for the subject matter and his family company
+               is as he himself has argued a direct competitor to the agency he's been tapped to
+               run. And if that weren't disqualifying enough there is one more concern hanging over
+               his nomination </u>
+         </div>
+         <div type="cutaway" xml:id="CA12">
+            <u who="#UP12" trans="smooth">The Labor Department investigation into AccuWeather found
+               multiple sexual harassment claims were <emph>ignored</emph> by executives it says
+               women who complained feared retaliation</u>
+         </div>
+         <div type="section">
+            <u who="#JO" trans="smooth">Right the investigation said the company had a severe and
+               pervasive harassment problem and while the company denies the allegations they also
+               chose not to fight them. And the crazy thing here is Myers has been Trump's nominee
+               for <emph>two years</emph> now but he hasn't been in the job because the Senate has
+               been sitting on his confirmation. Trump's already had to resubmit his nomination
+               twice and if Myers isn't confirmed by the end of this year he'll have to do it again
+               which <pause/> why? <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> why not find another guy? <incident>
+                  <desc>[audience applause]</desc>
+               </incident> any other guy! <incident>
+                  <desc>[audience cheers]</desc>
+               </incident> other than of course the fact that for that to happen Trump would have to
+               do <kinesic>
+                  <desc>[counts with fingers]</desc>
+               </kinesic> stuff know stuff <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> and think workplace harassment is a bad thing. And none of us should be
+               holding our breath on that. <incident>
+                  <desc>[audience laughter]</desc>
+               </incident> Besides it has been easy for Trump to stick by Myers because hardly
+               anyone has been paying attention to this issue which is understandable but we really
+               should be. And I might actually know a way to help here because what better way to
+               illustrate an abstract threat than by learning from the company that since the 80s
+               has perfected turning dry information into state-of-the-art entertainment so please
+               if you will come with me<incident>
+                  <desc>[John Oliver walks away from his desk to another set]</desc>
+               </incident></u>
+         </div>
+         <div type="section">
+            <desc>[The set is decorated like an 80s TV weather forecast with 80s style video
+               graphics shown on a weather screen behind John Oliver]</desc>
+            <u who="#JO"> hi there I would like to issue a very important warning for the DC area
+               according to our patented thousand day forecast model superstorm Barry is going to
+               cause <emph>significant harm</emph> to the National Weather Service. As you can see
+               it originated over here at AccuWeather headquarters and it's been gravitating towards <choice>
+                  <abbr>NOAA</abbr>
+                  <ex>National Oceanic and Atmospheric Administration</ex>
+               </choice> for nearly two years now. If it makes landfall our model suggests there
+               could be significant damage. I'm talking <figure type="video_graphic"
+                  source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 15:37 - the graphic of Santa Claus' reindeer sliding off a roof
+                     from timestamp 4:14 is shown on the weather screen]</desc>
+               </figure> mass reindeer suicide sliding Santa off a roof damage. That's a lot.
+               Because we do not want the whole country to be like Eddie Vedder <figure
+                  type="video_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 15:46 - an 80s video game style graphic of Eddie Vedder on a
+                     stage is shown on the weather screen]</desc>
+               </figure>in a position where unless we pay AccuWeather the next thing you know: bang!
+                  <figure type="video_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 15:50 - Eddie Vedder is struck by lightning and his ghost floats
+                     away from his body]</desc>
+               </figure>
+               <q who="#EV" rend="singing">we're not alive yeah yeah we're not alive</q>
+               <incident>
+                  <desc>[audience laughter]</desc>
+                  <desc>[audience applause]</desc>
+               </incident> what I'm saying is superstorm Barry hitting the National Weather Service
+               could cause a massive data freeze while unfortunately over at AccuWeather <figure
+                  type="video_graphic" source="https://www.youtube.com/watch?v=qMGn9T37eR8">
+                  <desc>[timestamp: 16:12 - an 80s video game style graphic of the head of Barry
+                     Myers in a raincloud raining dollar bills over the headquarter of AccuWeather
+                     is shown on the weather screen]</desc>
+               </figure> there's going to be around a 95% chance of him <shift feature="rhythm"
+                  new="rh"/>making it rain. <incident>
+                  <desc>[audience applause]</desc>
+                  <desc>[audience cheers]</desc>
+               </incident></u>
+         </div>
+         <div type="end_card">
+            <incident dur-iso="P10S">
+               <desc>[end card appears]</desc>
+            </incident>
+         </div>
+      </body>
+   </text>
+</TEI>

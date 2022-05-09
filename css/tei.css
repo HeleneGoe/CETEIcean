@@ -1,0 +1,26 @@
+tei-div[type=section] {
+  background-color: seagreen;
+  color: #FFFFFF;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+tei-div[type=cutaway] {
+  background-color: lightgreen;
+  padding: 50px 2px 50px 50px;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  text-indent: 50px;
+}
+tei-incident{
+  color: #E7E9EB;
+  font-weight: normal;
+  font-style: italic;
+}
+tei-div {
+  display: block;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+tei-standOff {
+  display: none;
+}
